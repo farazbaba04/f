@@ -16,7 +16,7 @@
     <meta name="distribution" content="global">
     <meta name="rating" content="general">
     
-    <!-- ===== OPEN GRAPH TAGS (Facebook/WhatsApp/LinkedIn) ===== -->
+    <!-- ===== OPEN GRAPH TAGS ===== -->
     <meta property="og:title" content="Farazé | Pakistan's Most Long-Lasting Perfumes">
     <meta property="og:description" content="Experience luxury with Pakistan's most long-lasting fragrances. 30% OFF today + Free Delivery!">
     <meta property="og:image" content="https://faraze.com/images/og-image.jpg">
@@ -34,14 +34,14 @@
     <meta name="twitter:image" content="https://faraze.com/images/twitter-image.jpg">
     <meta name="twitter:site" content="@farazeofficial">
     
-    <!-- ===== CANONICAL URL (Duplicate content se bachne ke liye) ===== -->
+    <!-- ===== CANONICAL URL ===== -->
     <link rel="canonical" href="https://faraze.com">
     
-    <!-- ===== GEO TAGS (Pakistan specific) ===== -->
+    <!-- ===== GEO TAGS ===== -->
     <meta name="geo.region" content="PK">
     <meta name="geo.placename" content="Pakistan">
     
-    <!-- ===== STRUCTURED DATA (Schema.org - Google ko batayega ke website kya hai) ===== -->
+    <!-- ===== STRUCTURED DATA ===== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -74,7 +74,7 @@
     }
     </script>
     
-    <!-- ===== PRODUCT SCHEMA FOR EACH PERFUME ===== -->
+    <!-- ===== PRODUCT SCHEMA ===== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -91,7 +91,7 @@
             "name": "Office by Faraz",
             "description": "A powerful, fresh, and exceptionally long-lasting fragrance engineered for ultimate professional confidence. Opens with sharp citrus and dries down to a dominating, magnetic woody base.",
             "brand": "Farazé",
-            "image": "https://faraze.com/images/office.png",
+            "image": "https://faraze.com/office.png",
             "offers": {
               "@type": "Offer",
               "price": "1750",
@@ -221,7 +221,7 @@
             "name": "Designed by Zarsh",
             "description": "A warm, spicy, and decadently sweet gourmand fragrance. Renowned for extreme longevity, enveloping you in luxurious, addictive aura of cinnamon, dates, praline and vanilla.",
             "brand": "Farazé",
-            "image": "https://faraze.com/images/zarsh.png",
+            "image": "https://faraze.com/zarsh.png",
             "offers": {
               "@type": "Offer",
               "price": "1400",
@@ -243,7 +243,7 @@
     }
     </script>
     
-    <!-- ===== WEBSITE SCHEMA (Breadcrumbs) ===== -->
+    <!-- ===== BREADCRUMB SCHEMA ===== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -308,15 +308,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1609698440349668&ev=PageView&noscript=1"
     /></noscript>
-    
-    <!-- ===== GOOGLE ANALYTICS (Add your ID later) ===== -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script> -->
     
     <style>
         /* ALL YOUR EXISTING CSS REMAINS EXACTLY THE SAME */
@@ -386,7 +377,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         .product-container.visible { opacity: 1; transform: translateY(0); }
         .product-section:nth-child(even) .product-container { flex-direction: row-reverse; }
         .image-wrapper { flex: 1.2; position: relative; overflow: hidden; border: 1px solid var(--border-lux); border-radius: 4px; }
-        .image-wrapper img { width: 100%; display: block; filter: grayscale(100%); transition: transform var(--transition-slow), filter var(--transition-slow); }
+        .image-wrapper img { width: 100%; height: auto; display: block; filter: grayscale(100%); transition: transform var(--transition-slow), filter var(--transition-slow); }
         .image-wrapper:hover img { filter: grayscale(0%); transform: scale(1.03); }
         .info-wrapper { flex: 1; }
         h2.title { font-size: clamp(32px, 5vw, 48px); line-height: 1.1; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 3px; }
@@ -704,7 +695,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     </header>
 
     <section class="hero">
-        <!-- SEO OPTIMIZED HERO SECTION -->
         <h1 class="founder-title">Pakistan's Most Long-Lasting Perfumes</h1>
         <p class="hero-tagline">Luxury Fragrances · 8+ Hours Longevity · Premium Oils</p>
         <p class="trust-text"><strong>Experience the best perfume in Pakistan.</strong> Farazé brings you <strong>long-lasting luxury fragrances</strong> crafted with premium ingredients. From <strong>Office by Faraz</strong> for professionals to <strong>Oud by Faraz</strong> for special occasions. <strong>Shop online with cash on delivery</strong> across Pakistan.</p>
@@ -717,10 +707,15 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         <div class="scroll-down">Scroll to Discover ↓</div>
     </section>
 
-    <!-- Product Sections - WITH SEO FRIENDLY DESCRIPTIONS -->
+    <!-- Product Sections - FIXED IMAGES -->
     <section class="product-section" id="office" data-name="Office by Faraz" data-original="2500" data-price="1750">
         <div class="product-container">
-            <div class="image-wrapper"><img src="office.png" alt="Office by Faraz - Long lasting perfume for men professional use" width="400" height="400" loading="lazy"></div>
+            <div class="image-wrapper">
+                <img src="office.png" 
+                     alt="Office by Faraz - Long lasting perfume for men professional use" 
+                     style="width: 100%; height: auto; max-width: 100%;" 
+                     loading="lazy">
+            </div>
             <div class="info-wrapper">
                 <h2 class="title">Office by Faraz</h2>
                 <div class="price-container"><span class="original-price">Rs. 2500</span><span class="discount-badge">-30%</span><span class="final-price">Rs. 1750</span></div>
@@ -732,7 +727,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     <section class="product-section" id="oud" data-name="Oud by Faraz" data-original="2500" data-price="1750">
         <div class="product-container">
-            <div class="image-wrapper"><img src="oud.png" alt="Oud by Faraz - Premium oriental oud perfume long lasting" width="400" height="400" loading="lazy"></div>
+            <div class="image-wrapper">
+                <img src="oud.png" 
+                     alt="Oud by Faraz - Premium oriental oud perfume long lasting" 
+                     style="width: 100%; height: auto; max-width: 100%;" 
+                     loading="lazy">
+            </div>
             <div class="info-wrapper">
                 <h2 class="title">Oud by Faraz</h2>
                 <div class="price-container"><span class="original-price">Rs. 2500</span><span class="discount-badge">-30%</span><span class="final-price">Rs. 1750</span></div>
@@ -744,7 +744,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     <section class="product-section" id="oxygen" data-name="Oxygen By Faraz" data-original="2000" data-price="1400">
         <div class="product-container">
-            <div class="image-wrapper"><img src="oxygen.png" alt="Oxygen by Faraz - Aquatic fresh long lasting perfume" width="400" height="400" loading="lazy"></div>
+            <div class="image-wrapper">
+                <img src="oxygen.png" 
+                     alt="Oxygen by Faraz - Aquatic fresh long lasting perfume" 
+                     style="width: 100%; height: auto; max-width: 100%;" 
+                     loading="lazy">
+            </div>
             <div class="info-wrapper">
                 <h2 class="title">Oxygen by Faraz</h2>
                 <div class="price-container"><span class="original-price">Rs. 2000</span><span class="discount-badge">-30%</span><span class="final-price">Rs. 1400</span></div>
@@ -756,7 +761,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     <section class="product-section" id="legend" data-name="Legendvibes by Faraz" data-original="2500" data-price="1750">
         <div class="product-container">
-            <div class="image-wrapper"><img src="legend.png" alt="Legendvibes by Faraz - Spicy woody long lasting perfume" width="400" height="400" loading="lazy"></div>
+            <div class="image-wrapper">
+                <img src="legend.png" 
+                     alt="Legendvibes by Faraz - Spicy woody long lasting perfume" 
+                     style="width: 100%; height: auto; max-width: 100%;" 
+                     loading="lazy">
+            </div>
             <div class="info-wrapper">
                 <h2 class="title">Legendvibes by Faraz</h2>
                 <div class="price-container"><span class="original-price">Rs. 2500</span><span class="discount-badge">-30%</span><span class="final-price">Rs. 1750</span></div>
@@ -768,7 +778,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     <section class="product-section" id="nimra" data-name="Designed by Nimra" data-original="2000" data-price="1400">
         <div class="product-container">
-            <div class="image-wrapper"><img src="nimra.png" alt="Designed by Nimra - Floral long lasting perfume for women" width="400" height="400" loading="lazy"></div>
+            <div class="image-wrapper">
+                <img src="nimra.png" 
+                     alt="Designed by Nimra - Floral long lasting perfume for women" 
+                     style="width: 100%; height: auto; max-width: 100%;" 
+                     loading="lazy">
+            </div>
             <div class="info-wrapper">
                 <h2 class="title">Designed by Nimra</h2>
                 <div class="price-container"><span class="original-price">Rs. 2000</span><span class="discount-badge">-30%</span><span class="final-price">Rs. 1400</span></div>
@@ -780,7 +795,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     <section class="product-section" id="zarsh" data-name="Designed by Zarsh" data-original="2000" data-price="1400">
         <div class="product-container">
-            <div class="image-wrapper"><img src="zarsh.png" alt="Designed by Zarsh - Best selling sweet gourmand long lasting perfume" width="400" height="400" loading="lazy"></div>
+            <div class="image-wrapper">
+                <img src="zarsh.png" 
+                     alt="Designed by Zarsh - Best selling sweet gourmand long lasting perfume" 
+                     style="width: 100%; height: auto; max-width: 100%;" 
+                     loading="lazy">
+            </div>
             <div class="info-wrapper">
                 <h2 class="title">Designed by Zarsh</h2>
                 <div class="price-container"><span class="original-price">Rs. 2000</span><span class="discount-badge">-30%</span><span class="final-price">Rs. 1400</span></div>
@@ -1290,7 +1310,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
             const hotContent = document.getElementById('hotContent');
             hotContent.innerHTML = `
                 <div class="hot-image">
-                    <img src="${product.img}" alt="${product.name} - Bestselling long lasting perfume" loading="lazy">
+                    <img src="${product.img}" alt="${product.name} - Bestselling long lasting perfume" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="hot-info">
                     <div class="hot-badge">BESTSELLER 🔥</div>
